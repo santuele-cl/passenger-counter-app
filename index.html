@@ -1,0 +1,32 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="elements-box">
+                <div>
+                    <h1>People entered:</h1>
+                    <h2 id="count-el">0</h2>
+                </div>
+                <div class="btn-wrapper">
+                    <div>
+                        <button id="increment-btn" onclick="increment()">INCREMENT</button>
+                        <button id="save-btn" onclick="save()">SAVE</button>
+                    </div>
+                    <div>
+                        <button id="decrement-btn" onclick="decrement()">DECREMENT</button>
+                        <button id="delete-btn" onclick="reset()">DELETE ALL</button>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <p id="save-el">Previous entries: </p>
+                    <p>total count: <span id="total-count-el">0</span></p><!-- ==== ADDED FEATURE==== -->
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
